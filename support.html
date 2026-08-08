@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>TaerStudio — Support</title>
+<meta name="description" content="Support and frequently asked questions for TaerStudio apps.">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/invoicemaker-icon.png">
+<style>
+  :root {
+    --bg: #ffffff; --surface: #f6f7f9; --text: #1c1e21; --muted: #5f6570;
+    --heading: #0b0c0e; --accent: #2563eb; --border: #e4e7ec;
+    --link: #2563eb;
+    --max: 820px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121417; --surface: #1a1d21; --text: #d6d9de; --muted: #9aa1ac;
+      --heading: #f2f4f7; --accent: #60a5fa; --border: #2a2e34;
+      --link: #7cb0ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px; line-height: 1.65; padding: 0 20px 80px;
+  }
+  .wrap { max-width: var(--max); margin: 0 auto; }
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: saturate(180%) blur(12px); -webkit-backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--border); margin: 0 -20px 32px; padding: 12px 20px;
+  }
+  .header-inner {
+    max-width: var(--max); margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .brand { font-weight: 700; color: var(--heading); font-size: 15px; letter-spacing: .2px; }
+  .brand span { color: var(--muted); font-weight: 500; }
+  .header-nav { display: flex; gap: 18px; font-size: 14px; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  h1 { color: var(--heading); font-size: 1.9rem; line-height: 1.2; margin: .2em 0 .1em; }
+  h2 {
+    color: var(--heading); font-size: 1.28rem; margin: 2.2em 0 .6em;
+    padding-top: .5em; border-top: 1px solid var(--border); scroll-margin-top: 76px;
+  }
+  h3 { color: var(--heading); font-size: 1.02rem; margin: 1.5em 0 .35em; }
+  .lead { font-size: 1.08rem; color: var(--muted); margin: 0 0 4px; max-width: 62ch; }
+  p { margin: .5em 0; }
+  ul { margin: .5em 0; padding-left: 1.3em; }
+  li { margin: .3em 0; }
+
+  .contact {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 18px 20px; margin: 24px 0 8px; font-size: 16px;
+  }
+  .contact .email { font-size: 1.06rem; font-weight: 600; }
+  .contact .note { color: var(--muted); font-size: 14px; margin-top: 8px; }
+
+  .toc {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 14px 18px; margin: 28px 0 0; font-size: 15px;
+  }
+  .toc ul { margin: .3em 0 0; }
+
+  .path { color: var(--muted); font-size: .95em; white-space: nowrap; }
+  footer {
+    margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="brand">Support <span>· TaerStudio</span></div>
+    <nav class="header-nav">
+      <a href="/">Home</a>
+      <a href="mailto:dev.tahatosun@gmail.com">Email</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <h1>Support</h1>
+  <p class="lead">Something not working, or a feature you wish existed? Write in — every message is read by the developer.</p>
+
+  <div class="contact">
+    <div class="email">📧 <a href="mailto:dev.tahatosun@gmail.com">dev.tahatosun@gmail.com</a></div>
+    <div class="note">
+      Typical reply within 2–3 business days. To speed things up, please include the app name,
+      your app version (Account → Settings), your device model and iOS version, and — if you can —
+      the steps that lead to the problem.
+    </div>
+  </div>
+
+  <div class="toc">
+    <strong>Jump to</strong>
+    <ul>
+      <li><a href="#invoicemaker">InvoiceMaker</a></li>
+      <li><a href="#privacy">Privacy &amp; data</a></li>
+    </ul>
+  </div>
+
+  <h2 id="invoicemaker">InvoiceMaker</h2>
+
+  <h3>Where is my data stored?</h3>
+  <p>
+    Entirely on your device. There is no account to create and nothing is uploaded to a TaerStudio
+    server — invoices, clients, products and company details never leave your iPhone or iPad.
+    The practical consequence: <strong>deleting the app deletes your data</strong>, and it is not
+    recoverable. Export a backup first if you plan to remove or replace the app.
+  </p>
+
+  <h3>How do I back up or move my data?</h3>
+  <p>
+    Open <span class="path">Account → Settings → Data</span> and export. JSON keeps everything and can
+    be imported back into the app; CSV is meant for spreadsheets and accounting software.
+    Save the file somewhere durable — Files, iCloud Drive, or email it to yourself.
+  </p>
+
+  <h3>I bought Pro but the app still shows me ads / locked features</h3>
+  <p>
+    Open <span class="path">Account → Settings → Restore purchases</span>. Make sure you are signed in
+    to the same Apple Account that made the purchase. Purchases are tied to the Apple Account, not to
+    the device, so a restore is also what you need after switching phones.
+  </p>
+
+  <h3>How do I cancel or change my subscription?</h3>
+  <p>
+    Subscriptions are managed by Apple, not inside the app:
+    <span class="path">Settings app → your name → Subscriptions</span>. Cancelling there stops the next
+    renewal; you keep Pro until the end of the period you already paid for. Refund requests also go
+    through Apple, at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
+  </p>
+
+  <h3>What does Pro unlock?</h3>
+  <ul>
+    <li>No ads</li>
+    <li>Every PDF template and colour palette</li>
+    <li>Estimates, and converting an estimate into an invoice</li>
+    <li>Signatures on invoices and estimates</li>
+    <li>Billing from more than one business</li>
+  </ul>
+
+  <h3>Sending an invoice doesn't work</h3>
+  <p>
+    "Apple Mail" only appears if a mail account is set up in the system Mail app; Gmail and Outlook
+    only appear if those apps are installed. If none are available, use the share button in the
+    top-right of the invoice — it exports the same PDF to Files, Messages, WhatsApp or anything else.
+  </p>
+
+  <h3>I'm not getting payment reminders</h3>
+  <p>
+    Reminders need two things: the toggle in <span class="path">Account → Settings → Payment reminders</span>,
+    and notification permission in <span class="path">Settings app → InvoiceMaker → Notifications</span>.
+    A reminder is only scheduled for an invoice that has a due date and is not fully paid yet.
+  </p>
+
+  <h3>Can I change the app language, or the language of the PDF?</h3>
+  <p>
+    Both, and independently. <span class="path">Account → Settings → Language</span> changes the app;
+    <span class="path">Default PDF language</span> sets what new documents use, and each individual
+    invoice can override it from its own editor. Twelve languages are supported.
+  </p>
+
+  <h3>Can I invoice from more than one business?</h3>
+  <p>
+    Yes, with Pro. Add businesses in <span class="path">Account</span>, then switch the active one from
+    the header on the Home screen. Invoices, receivables and recurring schedules are scoped to the
+    active business; clients and products are shared across all of them.
+  </p>
+
+  <h2 id="privacy">Privacy &amp; data</h2>
+  <p>
+    TaerStudio apps keep your content on your device. The apps do use Google AdMob to show ads to
+    non-paying users, and Firebase Analytics and Crashlytics to understand crashes and general usage —
+    these are described in full in each app's privacy policy.
+  </p>
+  <ul>
+    <li><a href="/invoicemaker/privacy-policy.html">InvoiceMaker — Privacy Policy</a></li>
+  </ul>
+  <p>
+    You can turn off personalised advertising at any time from
+    <span class="path">Settings app → Privacy &amp; Security → Tracking</span>. Where required by law,
+    InvoiceMaker also offers <span class="path">Account → Settings → Ad privacy settings</span> to change
+    your advertising consent.
+  </p>
+
+  <footer>© 2026 TaerStudio · <a href="/">taerstudio.github.io</a></footer>
+</div>
+</body>
+</html>
